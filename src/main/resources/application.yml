@@ -32,7 +32,7 @@ server:
   port: 8080
 
 jwt:
-  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  secret: ${JWT_SECRET}
   access-token-expiry-ms: 900000       # 15 minutes
   refresh-token-expiry-ms: 604800000   # 7 days
 
@@ -51,7 +51,7 @@ qdrant:
 
 langchain4j:
   open-ai:
-    api-key: ${your-openai-key-here}
+    api-key: ${OPENAI_API_KEY}}
     chat-model:
       model-name: gpt-4o-mini
       temperature: 0.0
